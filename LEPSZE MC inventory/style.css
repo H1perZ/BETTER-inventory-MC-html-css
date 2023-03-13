@@ -1,0 +1,220 @@
+
+/* --- ALL --- */
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent { 
+    width: 89vmin; 
+    height: 80vmin; 
+
+
+}
+body {
+    background-image: url(background.png);
+    height: 100%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+
+/* --- GÓRA --- */
+
+.gora {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kat {
+    background-color: #8A8A8A;
+    padding: 2vmin;
+    border-radius: 1vmin 1vmin 0 0 ;
+    border: 0.3vmin #535353 solid ;
+    
+    
+}
+.kat1 {
+    background-color: #C6C6C6;
+}
+
+
+
+.gora_lewo {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/* --- ŚRODEK --- */
+
+.srodek {
+    background-color:#C6C6C6;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:0.1vmin #535353 solid ;
+}
+
+
+
+.srodek_lewo {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    font-display: row;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.srodek_lewo>p {
+    font-size: 30px;
+}
+
+td {
+    --wielkosc:75px;
+    width: var(--wielkosc);
+    height: var(--wielkosc);
+    background-color: #8A8A8A;
+    border-left: 2px #C6C6C6 solid;
+    border-right: 2px #535353 solid;
+    border-top: 2px #C6C6C6 solid;
+    border-bottom: 2px #535353 solid;
+    display: block;
+    margin: 1px;
+    
+
+}
+tbody {
+    display: flex;
+    flex-direction: column;
+
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+tr:last-of-type{
+    margin-top: 10px;
+}
+.suwak {
+    margin-right: 60px;
+    margin-top: 90px;
+}
+.img-suwak {
+    width: 7.8vmin;
+}
+
+/* ------ RESPONSYWNOŚĆ */
+@media only screen and (max-width: 1920px) {
+    td {
+      --wielkosc:60px;
+    }
+    .img-suwak {
+        width: 7vmin;
+    }
+
+  }
+
+  @media only screen and (max-width: 950px) {
+    td {
+      --wielkosc:50px;
+    }
+    .img-suwak {
+        width: 6.5vmin;
+    }
+
+    img {
+        width:6vmin;
+    }
+
+
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    td {
+      --wielkosc:40px;
+    }
+    .img-suwak {
+        width: 5vmin;
+    }
+
+  }
+  @media only screen and (max-width: 700px) {
+    td {
+      --wielkosc:35px;
+    }
+    .img-suwak {
+        width: 6vmin;
+    }
+    img {
+        width:5vmin;
+    }
+
+  }  
+  @media only screen and (max-width: 650px) {
+    td {
+      --wielkosc:28px;
+    }
+    .img-suwak {
+        width: 6vmin;
+    }
+
+  }  
+
+
+
+
+
+/* --- DÓŁ */
+
+.dol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dol_lewo {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dol_prawo {
+    display: flex;
+}
+.kat2 {
+    background-color: #8A8A8A;
+    padding: 2vmin;
+    border-radius:  0 0 1vmin 1vmin ;
+    border: 0.3vmin #535353 solid ;
+}
+/* ---- kat:hover--- */
+
+.kat:hover {
+    background-color: #C6C6C6;
+}
+.kat2:hover {
+    background-color: #C6C6C6;
+}
+.td:hover {
+    background-color: #C6C6C6;
+}
+
+
+
+
+
